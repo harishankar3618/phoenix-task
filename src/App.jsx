@@ -37,7 +37,7 @@ const brand = {
   logo: 'https://cdn.prod.website-files.com/658d4930f1d45343af3cc4b5/658e70d0c4c1c4b70cae9449_Phoenix-Logo-.png',
   mark: 'https://cdn.prod.website-files.com/658d4930f1d45343af3cc4b5/66991d4dc9529c8e4bcf683a_Phoenix%20X%20Icon.png',
   heroImage:
-    '/hero-CVpKjZzb.jpg',
+    'https://github.com/harishankar3618/phoenix-task/blob/master/hero-CVpKjZzb.jpg?raw=true',
   heroPoster:
     'https://cdn.prod.website-files.com/658d4930f1d45343af3cc4b5%2F6958e6d7aca5ce6bf3cf8598_website-openings_poster.0000000.jpg',
   heroVideo:

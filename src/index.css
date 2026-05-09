@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --phoenix-red: #c1121f;
+  --phoenix-black: #111111;
+  --phoenix-white: #ffffff;
+  --phoenix-ink: #171717;
+  --phoenix-smoke: #f6f6f6;
+  --phoenix-red-glow: rgba(193, 18, 31, 0.16);
+  --phoenix-border: rgb(255 255 255 / 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: geometricPrecision;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--phoenix-white);
+  color: var(--phoenix-black);
+  font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: var(--phoenix-red);
+  color: var(--phoenix-white);
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: 'Inter Tight', 'Montserrat', system-ui, sans-serif;
+}
+
+.font-heading {
+  font-family: 'Montserrat', 'Inter Tight', system-ui, sans-serif;
+}
+
+.font-stat {
+  font-family: 'Oswald', 'Inter Tight', system-ui, sans-serif;
+}
+
+@layer utilities {
+  .section-shell {
+    width: min(100% - 2rem, 1180px);
+    margin-inline: auto;
+  }
+
+  .section-dark {
+    background:
+      radial-gradient(circle at top, rgb(193 18 31 / 0.13), transparent 34%),
+      linear-gradient(180deg, #111111 0%, #0d0d0d 100%);
+  }
+
+  .section-light {
+    background: linear-gradient(180deg, #ffffff 0%, #f7f5f2 100%);
+  }
+
+  .font800 {
+    font-weight: 800;
+  }
+
+  .font700 {
+    font-weight: 700;
+  }
+
+  .glass-card {
+    border: 1px solid var(--phoenix-border);
+    background: linear-gradient(135deg, rgb(255 255 255 / 0.14), rgb(255 255 255 / 0.05));
+    box-shadow: 0 20px 56px rgb(0 0 0 / 0.18);
+    backdrop-filter: blur(18px);
+  }
+
+  .luxury-panel {
+    border: 1px solid rgb(255 255 255 / 0.08);
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 24px 72px rgb(0 0 0 / 0.18);
+  }
+
+  .world-grid {
+    background-image:
+      linear-gradient(rgb(255 255 255 / 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(255 255 255 / 0.08) 1px, transparent 1px),
+      radial-gradient(circle at 50% 65%, rgb(193 18 31 / 0.22), transparent 42%);
+    background-size: 58px 58px, 58px 58px, 100% 100%;
+    mask-image: linear-gradient(to top, black, transparent);
+  }
+
+  .grain-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image:
+      linear-gradient(0deg, rgba(255, 255, 255, 0.8) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.8) 1px, transparent 1px);
+    background-size: 6px 6px;
+    mix-blend-mode: overlay;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

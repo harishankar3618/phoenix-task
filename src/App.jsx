@@ -37,7 +37,7 @@ const brand = {
   logo: 'https://cdn.prod.website-files.com/658d4930f1d45343af3cc4b5/658e70d0c4c1c4b70cae9449_Phoenix-Logo-.png',
   mark: 'https://cdn.prod.website-files.com/658d4930f1d45343af3cc4b5/66991d4dc9529c8e4bcf683a_Phoenix%20X%20Icon.png',
   heroImage:
-    'https://storage.googleapis.com/gpt-engineer-file-uploads/image-gen/7731bcc6-aeb0-4ef7-9411-93015973979a?Expires=1778333541&GoogleAccessId=go-api-on-aws%40gpt-engineer-390607.iam.gserviceaccount.com&Signature=XxVNXngvvZZ63cHJnZj%2Bhuiu98PSY3L9FSLzB4WkPsq7M8%2BNgwQHK9pSKRZtiQ%2BvBVW73NXUbB%2FjAQID97k52wrp4QZJ4BUxLUmsEDhYfp%2FuYRHJZBlGot1fuFFah%2BmRqOONdLmp3pc5edRE8DJ5b4JXDP2uXCh7b6L2q6n25TqqK7mFgRLHGSwZ6Vi%2FRXHxsqGzVVtrrzzCgGpEa2I8aTwzXrKKrlBzfAixgsI86WXzEerwArCzz%2B7B4Yv3dmwpKFNXB0t0eHsA6VxQeBcM5nFKvwpXV9yL8NOBsBlLTHCrxrNHOpPGPR%2F8GiFLQbERMzskHHwA4V3MekUhbDUWTg%3D%3D',
+    '/dist/assets/hero-CVpKjZzb.jpg',
   heroPoster:
     'https://cdn.prod.website-files.com/658d4930f1d45343af3cc4b5%2F6958e6d7aca5ce6bf3cf8598_website-openings_poster.0000000.jpg',
   heroVideo:
